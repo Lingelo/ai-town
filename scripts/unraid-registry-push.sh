@@ -9,7 +9,7 @@ set -e
 UNRAID_IP=${1:-"192.168.1.100"}
 REGISTRY_PORT=${2:-"5000"}
 TAG=${3:-"latest"}
-LOCAL_IMAGE="lingelo/ai-town:${TAG}"
+LOCAL_IMAGE="freuhlon/ai-town:${TAG}"
 REGISTRY_URL="${UNRAID_IP}:${REGISTRY_PORT}"
 REGISTRY_IMAGE="${REGISTRY_URL}/ai-town:${TAG}"
 

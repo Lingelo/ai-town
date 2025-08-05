@@ -6,7 +6,7 @@ version: '3.8'
 services:
   # Frontend from Docker Hub
   frontend:
-    image: lingelo/ai-town:latest
+    image: freuhlon/ai-town:latest
     ports:
       - '${FRONTEND_PORT:-80}:80'
     environment:

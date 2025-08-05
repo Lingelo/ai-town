@@ -54,12 +54,12 @@ if [ "$REGISTRY_READY" = true ]; then
     echo ""
     
     # Build de l'image si nécessaire
-    if ! docker image inspect "lingelo/ai-town:latest" > /dev/null 2>&1; then
+    if ! docker image inspect "freuhlon/ai-town:latest" > /dev/null 2>&1; then
         echo "🔨 Build de l'image AI Town..."
         docker build -f Dockerfile.hub \
             --build-arg VITE_LANGUAGE=fr \
             --build-arg BUILD_VERSION=unraid \
-            -t lingelo/ai-town:latest .
+            -t freuhlon/ai-town:latest .
         echo "✅ Image construite!"
     else
         echo "✅ Image AI Town déjà disponible"
@@ -95,7 +95,7 @@ if [ "$REGISTRY_READY" = true ]; then
     echo "• Repository: ${UNRAID_IP}:${REGISTRY_PORT}/ai-town:latest"
 else
     echo "**Configuration pour Docker Hub:**"
-    echo "• Repository: lingelo/ai-town:latest"
+    echo "• Repository: freuhlon/ai-town:latest"
 fi
 
 echo ""

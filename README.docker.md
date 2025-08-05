@@ -1,7 +1,7 @@
 # 🏠 AI Town - Docker Hub
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/lingelo/ai-town)](https://hub.docker.com/r/lingelo/ai-town)
-[![Docker Image Size](https://img.shields.io/docker/image-size/lingelo/ai-town)](https://hub.docker.com/r/lingelo/ai-town)
+[![Docker Pulls](https://img.shields.io/docker/pulls/freuhlon/ai-town)](https://hub.docker.com/r/freuhlon/ai-town)
+[![Docker Image Size](https://img.shields.io/docker/image-size/freuhlon/ai-town)](https://hub.docker.com/r/freuhlon/ai-town)
 [![GitHub](https://img.shields.io/github/license/Lingelo/ai-town)](https://github.com/Lingelo/ai-town)
 
 Une ville virtuelle où les personnages IA vivent, discutent et socialisent. Image Docker prête à l'emploi avec support multilingue et intégration OpenRouter.
@@ -10,7 +10,7 @@ Une ville virtuelle où les personnages IA vivent, discutent et socialisent. Ima
 
 ### Utilisation simple (frontend seulement)
 ```bash
-docker run -p 80:80 lingelo/ai-town:latest
+docker run -p 80:80 freuhlon/ai-town:latest
 ```
 
 ### Déploiement complet avec backend

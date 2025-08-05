@@ -6,7 +6,7 @@
 set -e
 
 # Configuration
-DOCKER_USERNAME=${DOCKER_USERNAME:-"lingelo"}
+DOCKER_USERNAME=${DOCKER_USERNAME:-"freuhlon"}
 IMAGE_NAME="ai-town"
 TAG=${1:-"latest"}
 LANGUAGE=${2:-"en"}
