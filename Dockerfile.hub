@@ -28,6 +28,9 @@ ENV NODE_ENV=production
 ENV VITE_LANGUAGE=${VITE_LANGUAGE}
 ENV BUILD_VERSION=${BUILD_VERSION}
 
+# Temporarily modify vite.config.ts for Docker build
+RUN sed -i "s|base: '/ai-town'|base: '/'|" vite.config.ts
+
 # Build the application
 RUN npm run build
 
